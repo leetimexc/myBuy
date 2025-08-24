@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "myBuy自动解析excel",
+  "version": "1.0.1",
+  "description": "myBuy自动解析excel，并根据解析结果上传订单",
+  "action": {
+    "default_popup": "jy_extention.html",
+    "default_icon": "jy_nav_logo.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.baidu.com/*",
+        "https://mybuy.com/*",
+        "https://developer.chrome.com/docs/extensions/*"
+      ]
+    }
+  ]
+}
